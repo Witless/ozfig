@@ -1,0 +1,11 @@
+
+GET http://127.0.0.1:8080/
+Accept: application/json
+
+###
+@query = Hey! Tell me the news in the world
+
+GET http://127.0.0.1:8080/prompt/{{query}}
+Accept: application/json
+
+###
