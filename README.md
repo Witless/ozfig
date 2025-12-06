@@ -13,8 +13,6 @@ The resulting inference application holding the model receives the name of **ozf
 
 ![flow_of_the_evaluation_process](https://i.imgur.com/eozvQQt.png)
 
-### Used Evals
-
 ### Results of the model performance
 
 | Evaluation method  | Obtained score     | Desired values |
