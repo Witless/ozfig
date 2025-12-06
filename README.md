@@ -53,10 +53,7 @@ The information that IR spectroscopy can provide about a compound includes:
 5. Polymer characterization: Functional groups and bonds in polymers can be analyzed.
 6. Analytical chemistry: IR spectroscopy is widely used as an analytical tool.
 ```
-BERTScore:
-- Precision: 0.8775
-- Recall: 0.8542
-- F1: 0.8657
+
 
 ## Inference upgrade 
 
