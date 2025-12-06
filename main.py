@@ -12,8 +12,8 @@ REPO_ID = "YOUR_HF_REPO"
 GGUF_FILENAME = "llama-3.1-8b-finetuned.gguf"
 N_GPU_LAYERS = -1   # Offload all layers to GPU (use 0 for CPU-only)
 N_CTX = 4096
-model_dir = "./model"
-model_path = model_dir + "/" + GGUF_FILENAME
+MODEL_DIR = "./model"
+MODEL_PATH = MODEL_DIR + "/" + GGUF_FILENAME
 
 llm: Llama = None
 
@@ -61,13 +61,13 @@ async def lifespan(app: FastAPI):
         # If model isn't in ./model download it from HF otherwise load it to llama
         if not os.path.exists(os.path.join(os.getcwd(), 'model', GGUF_FILENAME)):
             print("Application starting up: Downloading and loading model...")
-            hf_hub_download(repo_id=REPO_ID, filename=GGUF_FILENAME, local_dir=model_dir)
-            print(f"Model downloaded to: {model_path}")
+            hf_hub_download(repo_id=REPO_ID, filename=GGUF_FILENAME, local_dir=MODEL_DIR)
+            print(f"Model downloaded to: {MODEL_PATH}")
 
 
         # Initialize the Llama model
         llm = Llama(
-            model_path=model_path,
+            model_path=MODEL_PATH,
             n_gpu_layers=N_GPU_LAYERS,
             n_ctx=N_CTX,
             verbose=False,
