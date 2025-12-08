@@ -40,7 +40,7 @@ It is worth noting that a dipole moment is required for a molecule to absorb IR 
 
 In summary, IR spectroscopy is a powerful tool for identifying functional groups and studying the structure of organic compounds.
 ```
-### Model Output (Finetuned Llama3.1-8B
+### Model Output (Finetuned Llama3.1-8B)
 ```
 Infrared (IR) spectroscopy works by detecting the absorption of infrared light by a compound. Infrared light, which has wavelengths longer than visible light, can excite the vibrations of molecules, causing them to absorb specific frequencies of infrared radiation. The absorption of infrared light is specific to the chemical bonds and functional groups present in a molecule, allowing for the identification and characterization of compounds.
 
@@ -53,7 +53,7 @@ The information that IR spectroscopy can provide about a compound includes:
 5. Polymer characterization: Functional groups and bonds in polymers can be analyzed.
 6. Analytical chemistry: IR spectroscopy is widely used as an analytical tool.
 ```
-### Model Output (Finetuned Llama3.2-1B
+### Model Output (Finetuned Llama3.2-1B)
 ```
 IR spectroscopy is a powerful analytical technique used to obtain information about the chemical structure and composition of substances. It involves the measurement of the infrared (IR) spectrum of a sample, which is a plot of the intensity of specific infrared (IR) absorption bands as a function of wavenumber (frequency) and angle of incidence.
 
