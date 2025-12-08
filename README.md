@@ -15,12 +15,16 @@ The resulting inference application holding the model receives the name of **ozf
 
 ### Results of the model performance
 
-| Evaluation method  | Obtained score     | Desired values |
-|--------------------|--------------------|---------------|
-| Average BERTScore Precision | 0.8634 | Closer to 1   |
-| Average BERTScore Recall    | 0.8676 | Closer to 1   |
-| Average BERTScore F1        | 0.8653 | Closer to 1   |
-| Perplexity         | 5.7923 +/- 0.03449 | Closer to 0   |
+| Model        | Evaluation Method            | Obtained Score            | Desired Values |
+|--------------|------------------------------|----------------------------|----------------|
+| Llama3.1-8B  | Average BERTScore Precision  | 0.8634                     | Closer to 1    |
+| Llama3.1-8B  | Average BERTScore Recall     | 0.8676                     | Closer to 1    |
+| Llama3.1-8B  | Average BERTScore F1         | 0.8653                     | Closer to 1    |
+| Llama3.1-8B  | Perplexity                   | 5.7923 ± 0.03449           | Closer to 0    |
+| Llama3.2-1B  | Average BERTScore Precision  | 0.8577                     | Closer to 1    |
+| Llama3.2-1B  | Average BERTScore Recall     | 0.8564                     | Closer to 1    |
+| Llama3.2-1B  | Average BERTScore F1         | 0.8568                     | Closer to 1    |
+
 
 
 ## Comparison of Reference Answer vs. Model Output
