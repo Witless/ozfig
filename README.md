@@ -15,12 +15,16 @@ The resulting inference application holding the model receives the name of **ozf
 
 ### Results of the model performance
 
-| Evaluation method  | Obtained score     | Desired values |
-|--------------------|--------------------|---------------|
-| Average BERTScore Precision | 0.8634 | Closer to 1   |
-| Average BERTScore Recall    | 0.8676 | Closer to 1   |
-| Average BERTScore F1        | 0.8653 | Closer to 1   |
-| Perplexity         | 5.7923 +/- 0.03449 | Closer to 0   |
+| Model        | Evaluation Method            | Obtained Score            | Desired Values |
+|--------------|------------------------------|----------------------------|----------------|
+| Llama3.1-8B  | Average BERTScore Precision  | 0.8634                     | Closer to 1    |
+| Llama3.1-8B  | Average BERTScore Recall     | 0.8676                     | Closer to 1    |
+| Llama3.1-8B  | Average BERTScore F1         | 0.8653                     | Closer to 1    |
+| Llama3.1-8B  | Perplexity                   | 5.7923 ± 0.03449           | Closer to 0    |
+| Llama3.2-1B  | Average BERTScore Precision  | 0.8577                     | Closer to 1    |
+| Llama3.2-1B  | Average BERTScore Recall     | 0.8564                     | Closer to 1    |
+| Llama3.2-1B  | Average BERTScore F1         | 0.8568                     | Closer to 1    |
+
 
 
 ## Comparison of Reference Answer vs. Model Output
@@ -40,7 +44,7 @@ It is worth noting that a dipole moment is required for a molecule to absorb IR 
 
 In summary, IR spectroscopy is a powerful tool for identifying functional groups and studying the structure of organic compounds.
 ```
-### Model Output
+### Model Output (Finetuned Llama3.1-8B)
 ```
 Infrared (IR) spectroscopy works by detecting the absorption of infrared light by a compound. Infrared light, which has wavelengths longer than visible light, can excite the vibrations of molecules, causing them to absorb specific frequencies of infrared radiation. The absorption of infrared light is specific to the chemical bonds and functional groups present in a molecule, allowing for the identification and characterization of compounds.
 
@@ -53,8 +57,16 @@ The information that IR spectroscopy can provide about a compound includes:
 5. Polymer characterization: Functional groups and bonds in polymers can be analyzed.
 6. Analytical chemistry: IR spectroscopy is widely used as an analytical tool.
 ```
+### Model Output (Finetuned Llama3.2-1B)
+```
+IR spectroscopy is a powerful analytical technique used to obtain information about the chemical structure and composition of substances. It involves the measurement of the infrared (IR) spectrum of a sample, which is a plot of the intensity of specific infrared (IR) absorption bands as a function of wavenumber (frequency) and angle of incidence.
 
+The IR spectrum of a substance is typically recorded as a plot of absorbance or reflectance against frequency (or wavelength) for a range of incident angles (usually between 10 and 40 degrees). The intensity of an absorption band (usually in the form of a peak) is proportional to the concentration of the absorbing species and the strength of the interaction between the absorbing molecule and the IR radiation.
 
+By analyzing the IR spectrum of a substance, chemists can determine the type and number of functional groups present (e.g., hydrocarbons, oxides, nitrogen-containing compounds, etc.), the presence of functional groups, and the overall structure of the molecule. This information is used to identify and classify the compound, elucidate its chemical structure, and understand its chemical behavior.
+
+Additionally, IR spectroscopy is widely used in the pharmaceutical and agricultural industries to analyze the molecular structure and physical properties of drugs, pesticides, and food products, as well as the stability
+```
 ## Inference upgrade 
 
 The model has been wrapped in an online inference application. 
